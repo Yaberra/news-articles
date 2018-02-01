@@ -37,9 +37,7 @@ app.set("view engine", "handlebars");
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/mongoHeadlines", {
-  useMongoClient: true
-});
+mongoose.connect("mongodb://localhost/mongoHeadlines");
 
 // Routes
 
