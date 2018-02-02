@@ -26,8 +26,8 @@ $(document).ready(function() {
             function loadScrapedResults() {
             $.get("/articles", () => {
             console.log("here are the articles");
-            // }).done(() => {
-            // window.location.reload();
+            }).done(() => {
+            window.location.reload();
             });
             };
 

@@ -41,9 +41,9 @@ app.get("/scrape", function(req, res) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
    
-    // Now, we grab every h1 within an article tag, and do the following:
+    // Grab .pb-local-content tag, and do the following:
     $(".pb-local-content").each(function(i, element) {
-      // Save an empty result object
+      //Create an empty result object
       var result = {};
 
       console.log("result");
